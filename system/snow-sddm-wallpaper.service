@@ -1,0 +1,7 @@
+[Unit]
+Description=Sync Hyprland Wallpaper to SDDM Theme
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/snow-sddm-wallpaper
