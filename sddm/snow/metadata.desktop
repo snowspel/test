@@ -1,0 +1,9 @@
+[SddmGreeterTheme]
+Name=Snow
+Description=Minimalist and clean Snow login theme for SDDM
+Author=Snow
+Type=sddm-theme
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations

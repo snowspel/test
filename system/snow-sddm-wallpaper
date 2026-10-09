@@ -1,0 +1,9 @@
+#!/bin/bash
+# /usr/local/bin/snow-sddm-wallpaper
+# Keeps SDDM login background in sync with current Hyprland wallpaper
+WALLPAPER_SRC="$HOME/.config/hypr/wallpaper/current.png"
+SDDM_DEST="/usr/share/sddm/themes/snow/background.jpg"
+
+if [ -f "$WALLPAPER_SRC" ]; then
+    cp "$WALLPAPER_SRC" "$SDDM_DEST" 2>/dev/null || true
+fi
